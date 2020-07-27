@@ -1,5 +1,10 @@
 /* CSS file for Project 2: Mobile-First Responsive Layout ------*/
 
+* {
+    box-sizing: border-box;
+  }
+
+
 .main-nav {
     width: 70%;
     background: white;
@@ -7,16 +12,40 @@
     padding: 10px;
     position: fixed;
     text-align: center;
-    border: 2px red;
+    border: 2px red solid;
 
 nav li {
     float: left;
   }
 
-  nav {
-    display: inline-block;
+ .main-footer {
+    border: 2px red solid;
+
   }
 
+  nav {
+    display: inline-block;
+    border: 2px red solid;
+  }
+
+  /* .portfolio {
+      border-style: solid;
+      border-color: red;
+      padding: 18% 24%;
+      margin: 100%;
+  } */
+
+  .marketing,
+  .travel,
+  .gallery,
+  .search,
+  .map,
+  .calculator {
+      width: 50%;
+      float: left;
+      margin-left: 1.6%
+      margin-right: -1.6%
+  }
 
 
 
