@@ -10,27 +10,48 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.6;
-  color: #293532;
-
+  color: #001524;
+  background-color: #15616D;
+  margin: 20px;
+  padding: 20px;
 }
   
+header {
+  text-align: center;
+  margin: 20px;
+
+}
 p {
   font-size: 1em;
-  margin-bottom: 2em;
+  margin: 2em;
 }
 
 h1 {
-  color: #093a58;
+  color: #78290F;
 }
 
 h2,
 h3,
 a {
-	color: #0d517a;
+  color: #FF7D00;
+}
 
 a {
-	text-decoration: none;
+   text-decoration: none;
 }
+
+.img {
+  max-width: 100%;
+ }
+
+ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
 
 /* =================================
   Base Layout Styles
@@ -38,44 +59,69 @@ a {
 
 /* ---- Navigation ---- */
 
+.name {
+  font-size: 1.25em;
+  margin: 0;
+  text-align: center;
+  border: 2px red solid;
+}
+
+/* .name, */
+/* .main-nav, */
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+  margin-bottom: 6px;
+  /* border: 2px red solid; */
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+.name a,
+.main-nav a {
+	text-align: center;
+  padding: 15px 10px;
+  border: 2px red solid;
+  text-decoration: none;
+}
+
+
 /* Main styles ----*/
 
 
 
 /* ---- Layout Containers ---- */
 
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 95%;
+}
+
+.main-header {
+  width: 95%;
+	text-align: center;
+  padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background:#e1e6e4;
+	/* margin-bottom: 30px; */
+}
+
+.main-footer {
+
+}
+
 /* ---- Page Elements ---- */
 
-.profile-pic {
-  color: white;
-  padding: 5px;
-  border: 2px solid red;
-  margin: 105px 0 60px;
-  background-size: cover;
-  float: right;       
-}
 
-
-.name {
-	font-size: 1.25em;
-	margin: 0;
-}
-
-.main-nav {
-	margin-top: 5px;
-}
-
-.name a,
-.main-nav a {
-	text-align: center;
-	display: block;
-	padding: 10px 15px;
-}
 
 .main-nav a {
 	font-size: .95em;
 	color: #293532;
-  ;
 	text-transform: uppercase;
 }
 
@@ -84,36 +130,52 @@ a {
 }
 
 
-
-nav li {
-    float: right;
-  }
-
- .main-footer {
-    border: 2px red solid;
-
-  }
-
-  nav {
-    display: inline-block;
-    border: 2px red solid;
-  }
-
-  
-
  
-
-
-
   /* ================================= 
  Media Queries 
 ==================================== */
 
-@media (min-width: 769) {
-    .container {
-        width: 70%;
-        max-width: 1000px;
+@media (min-width: 768px) {
+    
+  .container {
+        width: 80%;
+        max-width: 1150px;
         margin: 0 auto;
     }
 
+    .name,
+    .main-nav,
+    .main-nav li {
+      display: inline-block;
+    }
+
+    .name {
+      width: 240px;
+      
+    }
+
+    .main-nav a {
+      background:#e1e6e4;
+    }
 }
+
+@media (min-width: 1024px) {
+
+    .name {
+      width: 240px;
+      margin-right: 100px;
+    }
+
+
+    /* #market,
+    #search,
+    #travel,
+    #map,
+    #photo,
+    #calc {
+        width: 33%;
+        padding: 0 1em; */
+    }
+
+
+  }
