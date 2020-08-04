@@ -14,13 +14,15 @@ body {
   background-color: #15616D;
   margin: 20px;
   padding: 20px;
+  text-align: center;
 }
   
-/* header {
+  /* header {
   text-align: center;
   margin: 20px;
+} */
 
-}
+/*
 p {
   font-size: 1em;
   margin: 2em;
@@ -30,21 +32,24 @@ h1 {
   color: #ff7c02f8;
 }
 
+*/
 h2,
 h3,
 a {
   color: #FF7D00;
 }
 
+
 a {
    text-decoration: none;
 }
 
-.img {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 15px;
- }
+.img,
+.portfolio-image {
+  width: 100%;
+  height: auto;
+}
+
 
 ul li {
 	list-style: none;
@@ -67,19 +72,19 @@ Pseudo-Styles
 
 /* ---- Navigation ---- */
 
-/* .name {
-  font-size: 1.25em;
+.name {
+  font-size: 2em;
   margin: 0;
   text-align: center;
   border: 2px red solid;
-} */
+}
 
-/* .main-nav li {
+.main-nav li {
 	text-align: center;
 	background: #fff;
 	margin-top: 6px;
-  margin-bottom: 6px; */
-  /* border: 2px red solid; */
+  margin-bottom: 6px;
+  border: 2px red solid;
 }
 
 
