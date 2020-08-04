@@ -17,22 +17,21 @@ body {
   text-align: center;
 }
   
-  /* header {
+header {
   text-align: center;
   margin: 20px;
-} */
+}
 
-/*
 p {
   font-size: 1em;
   margin: 2em;
 }
 
 h1 {
-  color: #ff7c02f8;
+  color: #a04f04f8;
 }
 
-*/
+
 h2,
 h3,
 a {
@@ -48,14 +47,16 @@ a {
 .portfolio-image {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
-
-ul li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.profile-image {
+  max-width: 70%;
+  max-height: 70%;
 }
+
+/* This CSS removes the bullets from the list items, doesn't center it though */
+
 
 /*=================================
 Pseudo-Styles 
@@ -74,46 +75,36 @@ Pseudo-Styles
 
 .name {
   font-size: 2em;
-  margin: 0;
-  text-align: center;
-  border: 2px red solid;
+  display: block;
 }
 
 .main-nav li {
-	text-align: center;
+	/* text-align: center; */
 	background: #fff;
 	margin-top: 6px;
   margin-bottom: 6px;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
-
-
-/* .name a,
-.main-nav a {
-	text-align: center;
-  padding: 15px 10px;
-  border: 2px red solid;
-  text-decoration: none;
-} */
 
 
 /* Main styles ----*/
 
-/* .profilepic {
+.profilepic {
   max-width: 70%;
   max-height: 70%;
+  border-radius: 5px;
 }
 
 .main-header {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
 
 }
 
 .name {
   display: block;
   font-size: 1.8em;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .nav {
@@ -124,9 +115,17 @@ Pseudo-Styles
   max-width: 100%;
 }
 
-.bio {
+.nav li {
   display: block;
-  margin: 10px;
+  background: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.bio {
+  display: inline;
+  margin: 50px;
   padding: 10px;
 }
 
@@ -135,69 +134,21 @@ Pseudo-Styles
   width: 100%;
   font-weight: absolute;
 
-} */
+}
 
 /* ---- Layout Containers ---- */
 
 
-/* .container {
+ .container {
     padding-left: 1em;
     padding-right: 1em;
     width: 100%;
+    background-color: #EAF4F4;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 5px;
 }
 
-.main-header {
-  width: 95%;
-	text-align: center;
-  padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	background:#e1e6e4;
-	}
-
-.main-footer {
-
-} */
-
-/* ---- Page Elements ---- */
-
-
-
-/* .main-nav a {
-	font-size: .95em;
-	color: #293532;
-	text-transform: uppercase;
-}
-
-.marketing {
-  float: left;
-  width: 50%;
-}
-
-.search {
-  float: left;
-  width: 50%;
-}
-
-.travel {
-  float: left;
-  width: 50%;
-}
-
-.map {
-  float: left;
-  width: 50%;
-}
-
-.gallery {
-  float: left;
-  width: 50%;
-}
-
-.calculator {
-  float: left;
-  width: 50%;
-}
- */
 
 
 
@@ -206,36 +157,37 @@ Pseudo-Styles
  Media Queries 
 ==================================== */
 
-/* @media (min-width: 768px) {
-    
-  .container {
-        width: 80%;
-        max-width: 1150px;
-        margin: 0 auto;
-    }
+ @media (min-width: 768px) {
 
-    .name,
+      .name,
     .main-nav,
     .main-nav li {
       display: inline-block;
+      margin: 30 60;
+      padding: 30 60;
     }
+/* The CSS above allows the list items and name to stretch out beyond the same line*/
 
+       
     .name {
       width: 240px;
       Float: left;
+      margin-right: 50px;
     }
+/* The CSS above makes my name float left when the browser is extended out */
 
+    /*
     .main-nav a {
       background:#e1e6e4;
     }
-
+*/
     .profilepic {
       float: right;
       margin: 0 auto;
       width: 50%;
     }
 
-    .student-bio {
+    .bio {
         float: left;
         text-align: left;
         padding: 10px 10px;
@@ -243,7 +195,7 @@ Pseudo-Styles
         line-height: 1.3em;
         width: 50%;
     }
-    
+    /*
     .marketing {
       float: left;
       width: 50%;
@@ -275,7 +227,7 @@ Pseudo-Styles
     }
 
 }
-
+*/
 @media (min-width: 1024px) {
 
     .name {
@@ -283,9 +235,18 @@ Pseudo-Styles
       margin-right: 100px;
     }
 
+    .nav li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      list-style-type: none;
+      background: rgb(248, 248, 248);
+      margin: 10px 0px;
+    }  
+
 
     
     }
 
 
-   */
+   
