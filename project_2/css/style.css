@@ -11,7 +11,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.6;
   color: #001524;
-  background-color: #15616D;
+  background-color: #F0EBD8;
   margin: 20px;
   padding: 20px;
   text-align: center;
@@ -19,35 +19,39 @@ body {
   
 header {
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 p {
   font-size: 1em;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 h1 {
-  color: #a04f04f8;
+  color: #0D1321;
+  text-shadow: 1px 1px 3px #3E5C76;
 }
 
 
 h2,
 h3,
 a {
-  color: #FF7D00;
+  color: #1D2D44;
 }
 
+h2 {
+  margin-top: 10px;
+}
 
 a {
    text-decoration: none;
 }
 
-.img,
 .portfolio-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  padding: 15px;
 }
 
 .profile-image {
@@ -93,6 +97,7 @@ Pseudo-Styles
   max-width: 70%;
   max-height: 70%;
   border-radius: 5px;
+  padding: 20px;
 }
 
 .main-header {
@@ -124,16 +129,35 @@ Pseudo-Styles
 }
 
 .bio {
-  display: inline;
-  margin: 50px;
+  text-align: left;
   padding: 10px;
+  margin: 0 auto;
+  line-height: 1.3em;
 }
 
 .main-heading {
   text-align: center;
   width: 100%;
-  font-weight: absolute;
+  font-weight: bold;
+}
 
+.footer-nav {
+  display: none;
+}
+
+.mobile-name {
+  float: left;
+  font-weight: bold;
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+.mobile-nav {
+  display: inline-block;
+}
+
+.portfolio {
+  background-color: #fffae7;
 }
 
 /* ---- Layout Containers ---- */
@@ -143,14 +167,11 @@ Pseudo-Styles
     padding-left: 1em;
     padding-right: 1em;
     width: 100%;
-    background-color: #EAF4F4;
+    background-color: #748CAB;
+    padding: 10px;
     margin-bottom: 100px;
-    padding: 100px;
     border-radius: 5px;
 }
-
-
-
 
  
   /* ================================= 
@@ -159,7 +180,7 @@ Pseudo-Styles
 
  @media (min-width: 768px) {
 
-      .name,
+    .name,
     .main-nav,
     .main-nav li {
       display: inline-block;
@@ -168,19 +189,12 @@ Pseudo-Styles
     }
 /* The CSS above allows the list items and name to stretch out beyond the same line*/
 
-       
-    .name {
-      width: 240px;
-      Float: left;
-      margin-right: 50px;
-    }
-/* The CSS above makes my name float left when the browser is extended out */
-
-    /*
+ 
+     
     .main-nav a {
       background:#e1e6e4;
     }
-*/
+
     .profilepic {
       float: right;
       margin: 0 auto;
@@ -195,7 +209,11 @@ Pseudo-Styles
         line-height: 1.3em;
         width: 50%;
     }
-    /*
+    
+    .content-group {
+      background-color: #748CAB;
+    }
+
     .marketing {
       float: left;
       width: 50%;
@@ -226,8 +244,10 @@ Pseudo-Styles
       width: 50%;
     }
 
+
+
 }
-*/
+
 @media (min-width: 1024px) {
 
     .name {
@@ -243,10 +263,44 @@ Pseudo-Styles
       background: rgb(248, 248, 248);
       margin: 10px 0px;
     }  
-
+    
+    .marketing {
+      float: left;
+      width: 33.3%;
+    }
+    
+    .search {
+      float: left;
+      width: 33.3;
+    }
+    
+    .travel {
+      float: left;
+      width: 33.3%;
+    }
+    
+    .map {
+      float: left;
+      width: 33.3%;
+    }
+    
+    .gallery {
+      float: left;
+      width: 33.3%;
+    }
+    
+    .calculator {
+      float: left;
+      width: 33.3%;
+    }
 
     
     }
 
-  }
+  /*Float Clearfix*/
    
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
