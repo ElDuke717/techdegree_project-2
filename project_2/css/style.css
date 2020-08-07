@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   color: #001524;
   background-color: #F0EBD8;
-  margin: 20px;
+  /* margin: 20px; */
   padding: 20px;
   text-align: center;
 }
@@ -94,10 +94,8 @@ Pseudo-Styles
 /* Main styles ----*/
 
 .profilepic {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%; 
   border-radius: 5px;
-  padding: 20px;
 }
 
 .main-header {
@@ -141,24 +139,42 @@ Pseudo-Styles
   font-weight: bold;
 }
 
-.footer-nav {
-  display: none;
+.portfolio {
+  background-color:#fffae7;
+}
+/* This allows the list items in mobile view to align side by side along the bottom. */
+
+#contact {
+  padding: 20px 0;
+}/* This puts padding around the #contact id container at the bottom of the page*/
+
+footer {
+  text-align: initial;
+} /*This causes my name in the footer to align left when in the mobile view. */
+
+.bottom-name {
+  font-size: 1em;
+  line-height: 0.15;
+  float: left;
+} /*This aligns my name with the "back to top" on the same line.  The font size is reduced and line height aligns the name with "back to top"*/
+
+.footer-nav ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
 }
 
-.mobile-name {
-  float: left;
-  font-weight: bold;
-  margin: 20px 10px;
-  padding: 10px;
-}
+.footer-nav li {
+  display: inline-block;
+} /*This causes the "back-to-top" text to align to the right of my name. */
+
+.footer-nav a {
+  line-height: 2.15;
+} /*This changes the line height between the nav items in the footer unordered list and separates the items in the inline list.  Multiply times the default font size.*/
 
 .mobile-nav {
-  display: inline-block;
-}
-
-.portfolio {
-  background-color: #fffae7;
-}
+  display: none;
+} /*This hides three of the items in the mobile-nav class when viewed in the mobile viewport.*/
 
 /* ---- Layout Containers ---- */
 
@@ -180,19 +196,19 @@ Pseudo-Styles
 
  @media (min-width: 768px) {
 
-    .name,
-    .main-nav,
+    .main-nav {
+         margin: 30px auto 60px;
+    }
     .main-nav li {
       display: inline-block;
-      margin: 30 60;
-      padding: 30 60;
+      margin: 0 10px;
     }
 /* The CSS above allows the list items and name to stretch out beyond the same line*/
 
- 
      
     .main-nav a {
       background:#e1e6e4;
+      padding: 10px;
     }
 
     .profilepic {
@@ -210,9 +226,10 @@ Pseudo-Styles
         width: 50%;
     }
     
-    .content-group {
-      background-color: #748CAB;
-    }
+    
+    #content-group div {
+      min-height: 425px;
+    } /*This constrains the size of this container*/
 
     .marketing {
       float: left;
@@ -246,23 +263,30 @@ Pseudo-Styles
 
 
 
+    .back-to-top {
+      display: none;
+    } /*This makes the display of "back to top" dissappear at the bottom of the page.*/
+
+    .mobile-nav {
+      display: inline-block;
+    }   /* This causes the mobile nav list items to show up and appear side by side.*/
+
 }
 
+
 @media (min-width: 1024px) {
-
+  .main-nav {
+    text-align: initial;
+  }
     .name {
-      width: 240px;
-      margin-right: 100px;
-    }
+      float: left;
+      line-height: 0.15;
+      margin-left: 10px;
+    } /*This causes my name to float to the left in wider 1024 viewport.*/
 
-    .nav li {
-      display: inline-block;
-      text-transform: uppercase;
-      font-weight: 600;
-      list-style-type: none;
-      background: rgb(248, 248, 248);
-      margin: 10px 0px;
-    }  
+    .main-nav ul {
+      text-align: right;
+    } /* This causes the mobile nav ul list items to appear at the bottom right in >1024px viewport.*/
     
     .marketing {
       float: left;
@@ -271,7 +295,7 @@ Pseudo-Styles
     
     .search {
       float: left;
-      width: 33.3;
+      width: 33.3%;
     }
     
     .travel {
