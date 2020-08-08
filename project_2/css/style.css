@@ -5,14 +5,13 @@
 
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.6;
   color: #001524;
   background-color: #F0EBD8;
-  /* margin: 20px; */
   padding: 20px;
   text-align: center;
 }
@@ -70,6 +69,9 @@ Pseudo-Styles
 	color: #5eac9b;
 } 
 
+.skills a:hover {
+  color: #f89451;
+}
 
 /* =================================
   Base Layout Styles
@@ -83,11 +85,9 @@ Pseudo-Styles
 }
 
 .main-nav li {
-	/* text-align: center; */
 	background: #fff;
 	margin-top: 6px;
   margin-bottom: 6px;
-  /* border: 2px red solid; */
 }
 
 
@@ -176,6 +176,15 @@ footer {
   display: none;
 } /*This hides three of the items in the mobile-nav class when viewed in the mobile viewport.*/
 
+.skills, 
+li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
 /* ---- Layout Containers ---- */
 
 
@@ -190,7 +199,7 @@ footer {
 }
 
  
-  /* ================================= 
+/* ================================= 
  Media Queries 
 ==================================== */
 
