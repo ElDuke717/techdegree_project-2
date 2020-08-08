@@ -1,4 +1,5 @@
 /* CSS file for Project 2: Mobile-First Responsive Layout ------*/
+/*CSS validated by https://jigsaw.w3.org/css-validator/validator at 3:24pm 8-8-20*/
 /* =================================
   Base Element Styles
 ==================================== */
@@ -69,7 +70,7 @@ Pseudo-Styles
 	color: #5eac9b;
 } 
 
-.skills a:hover {
+#skills a:hover {
   color: #f89451;
 }
 
@@ -90,6 +91,12 @@ Pseudo-Styles
   margin-bottom: 6px;
 }
 
+#skills {
+  background-color: #5eac9b;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 /* Main styles ----*/
 
